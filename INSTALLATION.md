@@ -36,9 +36,10 @@ sudo apt install mysql-server mysql-client -y
 sudo systemctl enable mysql
 sudo systemctl start mysql
 ```
-> *Configuración MySQL*
 
-## Accede a su consola:
+## **Configuración MySQL**
+
+> *Accede a su consola:*
 ```bash
 sudo mysql
 ```
