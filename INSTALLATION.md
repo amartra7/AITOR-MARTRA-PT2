@@ -1,4 +1,4 @@
-# INSTALACION DE LAMP
+# INSTALACIÓN DE LAMP
 
 ### 1. Primero has de actualizar el sistema por si hay posibles actualizaciones las cuales te den problemas a la hora de instalar todo.
 
@@ -11,12 +11,14 @@ sudo apt update && sudo apt upgrade -y
 ```bash 
 sudo apt install apache2 -y
 ```
+
 > *Activa e inicialo*
 
 ```bash
 sudo systemctl enable apache2
 sudo systemctl start apache2
 ```
+
 > *verifica el estado*
 
 ```bash
@@ -30,6 +32,7 @@ Comprueba la página por defecto de Apache en: `http://localhost`
 ```bash
 sudo apt install mysql-server mysql-client -y
 ```
+
 > *Inicia y habilita el servicio*
 
 ```bash
@@ -40,14 +43,19 @@ sudo systemctl start mysql
 ## **Configuración MySQL**
 
 > *Accede a su consola:*
+
 ```bash
 sudo mysql
 ```
+
 > *Creación base de datos*
+
 ```sql
 CREATE DATABASE bbdd;
 ```
+
 > *Creación de usuario local*
+
 ```sql
 CREATE USER 'usuario'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
 GRANT ALL PRIVILEGES ON bbdd.* TO 'usuario'@'localhost';
@@ -64,16 +72,19 @@ EXIT;
 ```bash
 sudo apt install php libapache2-mod-php php-mysql php-curl php-gd php-mbstring php-xml php-zip php-json php-cli -y
 ```
+
 > *Reinicia Apache para cargar PHP*
 
 ```bash
 sudo systemctl restart apache2
 ```
+
 > *Verificamos la versión de PHP:*
 
 ```bash
 php -v
 ```
+
 > *Por ultimo creamos un fitxero de prueba y lo comprobamos en: `http://localhost/info.php`*
 
 ```bash
@@ -85,6 +96,19 @@ echo "<?php phpinfo(); ?>" | sudo tee /var/www/html/info.php
 ```bash
 sudo rm /var/www/html/info.php
 ```
+
+# Configuración de VirtualHost con Apache2
+
+### 1. Crearemos una estructura de directorios para organizar mejor los sitios web:
+
+> *Directorio para el dominio: `domini.local`*
+
+```bash
+sudo mkdir -p /var/www/domini.local
+```
+
+
+
 
 
 
