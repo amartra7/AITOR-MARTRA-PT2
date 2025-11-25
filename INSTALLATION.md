@@ -215,13 +215,19 @@ sudo chmod -R 775 /var/www/domini.local
    wget https://download.nextcloud.com/server/releases/latest.zip
    ```
 
-4. Desomprime el archivo a una ruta cualquiera
+4. Desomprime el archivo a una ruta cualquiera:
 
    ```bash
    sudo unzip /ruta/al/arxiu.zip
    ```
 
+> **Si el archivo crea una carpeta interna asegurate de que el contenido se mueva del virtual host:**
 
+   ```bash
+   sudo mv nextcloud/* . && sudo rmdir nextcloud
+   # o
+   sudo mv owncloud/* . && sudo rmdir owncloud
+   ```
 
-
+- **Puedes hacer esto directamente si lo tienes descomprimido 
 
