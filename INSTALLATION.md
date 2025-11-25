@@ -197,17 +197,31 @@ sudo chmod -R 775 /var/www/domini.local
 
 #### 1.1. Pasos de la Instalación
 
-1. > *Muevete al directorio del virtual host:*
+1. Muevete al directorio del virtual host:
    
    ```bash
    cd /var/www/domini.local
    ```
 
-2. > *Limpia el contenido actual (si hace falta):*
+2. Limpia el contenido actual (si hace falta):
 
    ```bash
    sudo rm -rf *
    ```
 
-3. > *Descarga el fichero 
+3. Descarga el fichero `.zip`de la plataforma tirada (NextCloud) a tu sistema
+
+   ```bash
+   wget https://download.nextcloud.com/server/releases/latest.zip
+   ```
+
+4. Desomprime el archivo a una ruta cualquiera
+
+   ```bash
+   sudo unzip /ruta/al/arxiu.zip
+   ```
+
+
+
+
 
