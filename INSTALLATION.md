@@ -166,8 +166,48 @@ echo "<h1>Hola, benvingut domini.local</h1>" | sudo tee /var/www/domini.local/in
 
 ### 7. Solución de problemas: Registros de Apache2
 
-#### Registro de errores (contiene mensajes sobre los errores de la configuración):
+##### Registro de errores (contiene mensajes sobre los errores de la configuración):
 
 ```bash
 sudo tail -f /var/log/apache2/domini.local_error.log
 ```
+
+##### Registro de acceso (contiene las peticiones recibidas por el servidor):
+
+```bash
+sudo tail -f /var/log/apache2/domini.local_access.log
+```
+### 8. Asignación de permisos 
+
+##### Cambiar el propietario
+
+```bash
+sudo chown -R $USER:www-data /var/www/domini.local
+```
+
+##### Establecer los permisos adecuados
+
+```bash
+sudo chmod -R 775 /var/www/domini.local
+```
+
+# Guia de la instalación i configuración de plataformas cloud (Nextcloud / ownCloud)
+
+### 1.  Descarga e instalación de la plataforma cloud
+
+#### 1.1. Pasos de la Instalación
+
+1. > *Muevete al directorio del virtual host:*
+   
+   ```bash
+   cd /var/www/domini.local
+   ```
+
+2. > *Limpia el contenido actual (si hace falta):*
+
+   ```bash
+   sudo rm -rf *
+   ```
+
+3. > *Descarga el fichero 
+
