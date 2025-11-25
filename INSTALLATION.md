@@ -107,11 +107,67 @@ sudo rm /var/www/html/info.php
 sudo mkdir -p /var/www/domini.local
 ```
 
+### 2. Lo siguiente será definir el VirtualHost
 
+> *Crearemos un fitxero de configuración para nuestro VirtualHost dentro del siguiente directorio: `/etc/apache2/sites-available/`:*
 
+```bash
+sudo nano /etc/apache2/sites-available/domini.local.conf
+```
 
+> *Antes de añadir la configuración tener en cuenta que hay que substituir `domini.local`por tu nombre de dominio:
 
+```apache
+<VirtualHost *:80>
+    ServerAdmin admin@domini.local
+    ServerName www.domini.local
+    ServerAlias domini.local
+    DocumentRoot /var/www/domini.local
+    ErrorLog ${APACHE_LOG_DIR}/domini.local_error.log
+    CustomLog ${APACHE_LOG_DIR}/domini.local_access.log combined
+</VirtualHost>
+```
 
+### 3. A continuación habilitaremos el VirtualHost
 
+```bash
+sudo a2ensite domini.local.conf
+```
 
+### 4. Reiniciaremos Apache2
 
+```bash
+sudo systemctl restart apache2
+```
+
+### 5. Modificaremos `/etc/hosts` para resolver el dominio localmente
+
+```bash
+sudo nano /etc/hosts
+```
+
+> *Agrega la siguiente linea:*
+
+```
+127.0.0.1   www.domini.local domini.local
+```
+
+### 6. Comprobamos que funcione en el navegador
+
+```
+http://www.domini.local
+```
+
+> Si el directorio `/var/www/domini.local` esta vacio, Apache te mostrará el error 404, por tanto para comprobar que funciona crea un fitxero de prueba:
+
+```bash
+echo "<h1>Hola, benvingut domini.local</h1>" | sudo tee /var/www/domini.local/index.html
+```
+
+### 7. Solución de problemas: Registros de Apache2
+
+#### Registro de errores (contiene mensajes sobre los errores de la configuración):
+
+```bash
+sudo tail -f /var/log/apache2/domini.local_error.log
+```
