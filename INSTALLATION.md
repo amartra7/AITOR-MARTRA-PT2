@@ -6,7 +6,7 @@
 sudo apt update && sudo apt upgrade -y
 ```
 
-### 3. A continuación instala apache con el siguiente comando:
+### 2. A continuación instala apache con el siguiente comando:
    
    ```bash 
    sudo apt install apache2 -y
@@ -23,4 +23,6 @@ sudo apt update && sudo apt upgrade -y
    sudo systemctl status apache2
    ```
 
-### 4. 
+Comprueba la pagina por defecto de Apache en: `http://localhost`
+
+### 3.  
