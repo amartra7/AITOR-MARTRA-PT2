@@ -4,4 +4,9 @@
 
 ### Enlaces:
 
-- ![Instalación](Images/ConfigPrivLink.png)
+- [Instalación NextCloud](INSTALLATION.md)
+- [Configuración NextCloud](CONFIGURATION.md)
+
+#### Observaciones o problemas durante la practica
+
+- Durante la practica me he encontrado con algunos problemas de organización del github que ya he podido solucionar.
