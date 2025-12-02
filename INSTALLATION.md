@@ -229,5 +229,24 @@ sudo chmod -R 775 /var/www/domini.local
    sudo mv owncloud/* . && sudo rmdir owncloud
    ```
 
-- **Puedes hacer esto directamente si lo tienes descomprimido 
+5. Asegura los permisos correctos:
+
+   ```bash
+   sudo chown -R www-data:www-data /var/www/domini.local
+   sudo chmod -R 755 /var/www/domini.local
+   ```
+
+6. Accede a la interficie web
+
+   ```
+   http://domini.local
+   ```
+
+Sigue las instrucciones de configuración asistida:
+
+   - Crea un usuario administrador para nextcloud
+   - Configura la base de datos (Ej: NameDB/MySQL)
+   - Verifica que todos los requisitos del sistema se cumplan
+
+   
 
