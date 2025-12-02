@@ -10,7 +10,7 @@
 - Si quieres generar enlaces y compartir fitxeros con otros usuarios deberás seleccionar aquello que quieras compartir y darle a los tres puntos "..." ahi tendrás la opción de compartir ("Share") y a continuación en la
 imagen mostraré las opciones que te aparecen:
 
-![ConfiguraciónShares](Images/ConfigPrivLink.png)
+![Crear/Copiar los enlaces a ficheros](Images/CopiarEnlaces.png)
 
 ## 2. Crear usuarios:
 
@@ -25,3 +25,8 @@ imagen mostraré las opciones que te aparecen:
 
 ![Gestión y organicación de archivos/carpetas](Images/OrganizarArchivos&Carpetas.png)
 
+- Para poder configurar la opción de compartir o compartir enlaces en la cual entran la caducidad de estos, la obligación de contraseña, etc... Tendrás que entrar en el mismo apartado que el del punto 1; a los tres puntos "..." y desde ahi entrar a la configuración de enlaces.
+
+![Configuración de los enlaces](Images/ConfigPrivLink.png)
+
+# > Hasta aqui la configuración y demostración del funcionamiento de tu nextcloud.
