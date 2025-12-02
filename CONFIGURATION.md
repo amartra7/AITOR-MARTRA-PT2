@@ -14,8 +14,14 @@ imagen mostraré las opciones que te aparecen:
 
 ## 2. Crear usuarios:
 
--Para crear usuarios dentro de NextCloud tienes que acceder al apartado de "All accounts" accediendo a este desde tu perfil, a continuación te aparecerá el apartado de "New account", ahi podrás crear tu usuario con sus permisos por rol, añadirlos a grupos especificos, etc...
+- Para crear usuarios dentro de NextCloud tienes que acceder al apartado de "All accounts" accediendo a este desde tu perfil, a continuación te aparecerá el apartado de "New account", ahi podrás crear tu usuario con sus permisos por rol, añadirlos a grupos especificos, etc...
 
 ![Creación de cuentas NextCloud](CrearCuentasNC.png)
 ![Revisar los grupos de esas cuentas](RevisarGrupos.png)
+
+## 3. Administración de archivos:
+
+- Dentro del apartado de "All files" en tu NextCloud, podrás seleccionar varios archivos a la misma vez, cuando hayas seleccionado aquellos que quieres organizar, ya séan carpetas o archivos podrás crear una jerarquia lógica para todos estos.
+
+![Gestión y organicación de archivos/carpetas](OrganizarArchivos&Carpetas.png)
 
