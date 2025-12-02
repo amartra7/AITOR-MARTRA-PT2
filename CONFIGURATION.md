@@ -29,4 +29,4 @@ imagen mostraré las opciones que te aparecen:
 
 ![Configuración de los enlaces](Images/ConfigPrivLink.png)
 
-# > Hasta aqui la configuración y demostración del funcionamiento de tu nextcloud.
+> # Hasta aqui la configuración y demostración del funcionamiento de tu nextcloud.
