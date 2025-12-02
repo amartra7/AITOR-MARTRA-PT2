@@ -6,5 +6,6 @@
 - Lo mismo para crear carpetas, en la opción de "New" podrás crear carpetas
 - Si quieres generar enlaces y compartir fitxeros con otros usuarios deberás seleccionar aquello que quieras compartir y darle a los tres puntos "..." ahi tendrás la opción de compartir ("Share") y a continuación en la imagen mostraré las opciones que te aparecen:
 
-[Ver imagen ConfigPrivLink](https://github.com/<usuario>/<repo>/blob/photos/ConfigPrivLink.png)
+![ConfiguraciónShares](ConfigPrivLink.png)
+
 
